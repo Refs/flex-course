@@ -2,7 +2,13 @@
 # Flex layout
 
 
-## Css Formatting context
+## 解释 display :  flex | inline-flex;
+
+### css formatting context
+
+当我们使用 display: flex | inline-flex;  实际上我们就生成了 一个 css 格式化上下文；  
+
+> 当我们使用 display: flex; 的时候，实际上我们就生成了一个 格式化上下文，通俗一定 就是定义了一种 布局环境，环境内的元素都会收到环境的影响；
 
 1. BFC block formatting context 
   - 概念：块级格式化上下文，内部盒子垂直放置，相临盒子的margin重叠，内部样式不影响外部，不会和float元素重叠，内部浮动元素高度会被算在容器高度中;
@@ -19,6 +25,17 @@
 
 
 > 示例1： 
+
+### display: block 与 display: flex 异同 （BFC versus FFC）
+> 两者对给定的一种 格式化 环境，而 处于 环境内的 元素 的布局 会受到环境的影响；
+
+1. BFC: 
+  * 内部盒子垂直放置, 宽度默认会撑满父盒子；
+  * 相临盒子的 margin 会塌陷合并；
+  * 脱离文档流的盒子不会与文档流内的盒子重叠 (float: left; position: absolute | fixed)
+  * 浮动的盒子会被计算在容器高度内；
+
+### display: flex 与 display: inline-flex 的区别
 
 
 
