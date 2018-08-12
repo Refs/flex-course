@@ -1,0 +1,42 @@
+{
+  "name": "daheng-doc",
+  "version": "1.0.0",
+  "description": "* 转 pdf 利用 `Markdown PDF` vscode extension",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js",
+    "serve": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Refs/daheng-doc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Refs/daheng-doc/issues"
+  },
+  "homepage": "https://github.com/Refs/daheng-doc#readme",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "babel-loader": "^8.0.0-beta.2",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.1.1",
+    "lodash": "^4.17.10",
+    "reveal.js": "^3.6.0",
+    "typings": "^2.1.1"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.7.0",
+    "webpack-cli": "^2.1.2",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
