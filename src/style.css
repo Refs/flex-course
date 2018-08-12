@@ -1,12 +1,4 @@
-
-/* body {
-    background-color: green;
-} */
-
-.h4-p {
-    font-size:35px !important; 
-}
-
-img {
-    border: 0px !important;
+p {
+    background-color: lightcoral;
+    font-size: 20px;
 }
