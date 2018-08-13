@@ -1,27 +1,28 @@
 main {
     background-color: #cccccc;
+    min-height: 200px;
     border: 1px dashed black;
     display: flex;
     flex-wrap: wrap;
-    min-height: 200px;
+    /* justify-content: center; */
+    /* align-content: center; */
 }
 
-main:after {
+/* main:after {
     content: '';
     display: block;
     clear: both;
-}
-
+} */
 
 main > div {
-    background-color: white;
     min-width: 100px;
     min-height: 100px;
+    background: white;
     margin: 10px;
 }
 
 main > div:nth-child(2) {
     background: red;
     float: right;
-    /* height: 600px; */
+    /* height: 500px; */
 }

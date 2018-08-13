@@ -20,20 +20,42 @@
 > 两者对给定的一种 格式化 环境，而 处于 环境内的 元素 的布局 会受到环境的影响；
 
 1. BFC: 
-  * 内部盒子垂直放置, 宽度默认会撑满父盒子；
-  * 相临盒子的 margin 会塌陷合并；
-  * 脱离文档流的盒子不会与文档流内的盒子重叠 (float: left; position: absolute | fixed)
-  * 浮动的盒子会被计算在容器高度内；
+  * 内部的盒子会垂直放置，宽度会撑满父盒子；
+  * 相邻之间的盒子之间的margin 会合并；
+  * 浮动的盒子不会与其它盒子重叠；
+  * 清除浮动之后，浮动盒子的高度，会被计算在内；
 
 2. FFC
-  * 内部盒子 flex items 从左到右水平排列；cross axis 方向 会撑满 flex container;
-  * 相邻 flex items 之间margin 不会合并；
-  * float 属性 不再起作用；因为 float, vertical-align, clear 都是为 BFC 专门设计的；
+  * 内部盒子 会从左到右 水平排列， 盒子沿 cross axis 方向 会撑满父盒子；
+  * 相邻盒子之间的 margin 不会合并；
+  * float 属性 不再起作用，类似 vertical-align, clear 都是专门针对 BFC 而设计的；
 
 
 ### Flex Layout Box Model
 格式化上下文是一个很抽象的概念，我们希望能利用一个盒子，将其具象化，这个盒子就是 flex layout box model;
 
+![](./images/flex-layout-box-model.png)
+
+1. flex formatting context 中的对象
+
+  * flex container | flex item
+  * main axis | cross axis
+  * flex line (默认都是 single line, 使用flex: wrap 属性之后，有可能生成 multiple line))
+
+2. flex container 中可以使用的属性 
+  * flex-direction  
+  * flex-wrap
+  * flex-flow
+  * justify-content
+  * align-item
+  * align-content
+
+3. flex item 中可以使用的属性
+  * flex-grow
+  * flex-shrink
+  * flex-basis
+  * order
+  * align-self
 
 
 ### 盒子中的对象，
