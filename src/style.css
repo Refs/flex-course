@@ -1,32 +1,27 @@
 main {
     background-color: #cccccc;
     border: 1px dashed black;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 200px;
 }
 
-/* main:after {
+main:after {
     content: '';
     display: block;
     clear: both;
-} */
+}
 
-main > div:nth-child(1) {
-    background: lightcoral;
-    height: 100px;
-    margin: 20px;
+
+main > div {
+    background-color: white;
+    min-width: 100px;
+    min-height: 100px;
+    margin: 10px;
 }
 
 main > div:nth-child(2) {
-    background-color: lightgreen;
-    height: 100px;
-    margin: 20px;
+    background: red;
+    float: right;
+    /* height: 600px; */
 }
-
-main > div:nth-child(3) {
-    height: 500px;
-    width: 100px;
-    background-color: red;
-    float: left;
-}
-
-
-/*  */
