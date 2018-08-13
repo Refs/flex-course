@@ -1,11 +1,20 @@
 main {
     background-color: #cccccc;
-    min-height: 200px;
+    min-height: 500px;
     border: 1px dashed black;
     display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    /* align-content: center; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    flex-flow: column;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    align-items: flex-end;
+    align-items: flex-start;
+
 }
 
 /* main:after {
@@ -15,14 +24,27 @@ main {
 } */
 
 main > div {
-    min-width: 100px;
+    /* min-width: 100px; */
+    flex-basis: 100px;
+
     min-height: 100px;
+    /* height: 100px; */
     background: white;
     margin: 10px;
 }
 
+main > div:nth-child(1) {
+  flex-grow: 2;
+}
+
 main > div:nth-child(2) {
-    background: red;
+  flex-grow: 8;
+}
+
+main > div:nth-child(3) {
+    background: lightblue;
     float: right;
-    /* height: 500px; */
+    /* height: 200px; */
+    /* order: 1; */
+    flex-grow: 2;
 }
